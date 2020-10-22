@@ -2,6 +2,7 @@ package com.supergo.portal.dao;
 
 import com.supergo.portal.entity.Item;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**
@@ -10,5 +11,6 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
  */
 // @Repository // 可以不需要声明仓库注解
 public interface ItemRepository extends ElasticsearchRepository<Item, Long> {
-    Page<Item> findByItemNameLikeOrItemDescLike(String keyword);
+    // 一个查询关键字对应itemName和itemDesc
+    Page<Item> findByItemNameOrItemDesc(String itemName,String itemDesc , Pageable pageable);
 }
