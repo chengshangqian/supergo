@@ -1,0 +1,59 @@
+server:
+  address: 127.0.0.1
+  port: 8020
+
+spring:
+  application:
+    name: supergo-portal-web
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false # 关闭负载均衡器的ribbon，解决一些警告
+  # 允许覆盖bean
+  main:
+    allow-bean-definition-overriding: true # 配置了多个feign接口调用的都是同一个服务，需要设置为true
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.8.148:9300
+  elasticsearch:
+    rest:
+      uris: ["http://192.168.8.148:9200"]
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:2000/eureka
+  instance:
+    hostname: ${server.address}
+    health-check-url-path: /actuator/health
+    instance-id: ${spring.application.name}:${server.address}:${server.port}
+
+# feign配置：远程调用开启熔断功能，否则fallback指定的Mock无法启用，另外需要注意首次调用超时问题
+feign:
+  hystrix:
+    enabled: true
+
+# hystrix配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000 # 调用超时时间默认1秒，设为15秒避免首次调用超时而熔断
+
+# actuator应用监控配置
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  file: logs/supergo/${spring.application.name}.log

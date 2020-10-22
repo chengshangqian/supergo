@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.Order">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="order_id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="payment" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="payment_type" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="post_fee" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="status" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="update_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="payment_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="consign_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="end_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="close_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="shipping_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="shipping_code" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="user_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="buyer_message" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="buyer_nick" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="buyer_rate" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="receiver_area_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="receiver_mobile" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="receiver_zip_code" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="receiver" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="expire" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="invoice_type" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="source_type" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="seller_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    order_id, payment, payment_type, post_fee, status, create_time, update_time, payment_time, 
+    consign_time, end_time, close_time, shipping_name, shipping_code, user_id, buyer_message, 
+    buyer_nick, buyer_rate, receiver_area_name, receiver_mobile, receiver_zip_code, receiver, 
+    expire, invoice_type, source_type, seller_id
+  </sql>
+</mapper>

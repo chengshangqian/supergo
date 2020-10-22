@@ -1,0 +1,35 @@
+server:
+  address: 127.0.0.1
+  port: 3000
+
+spring:
+  application:
+    name: supergo-monitor
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false # 关闭负载均衡器的ribbon，解决一些警告
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:2000/eureka
+  instance:
+    hostname: ${server.address}
+    health-check-url-path: /actuator/health
+    instance-id: ${spring.application.name}:${server.address}:${server.port}
+
+# actuator应用监控配置
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  file: logs/supergo/${spring.application.name}.log

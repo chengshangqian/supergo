@@ -1,0 +1,39 @@
+server:
+  address: 127.0.0.1
+  port: 2000
+
+spring:
+  application:
+    name: supergo-eureka
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false # 关闭负载均衡器的ribbon，解决一些警告
+
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 30000
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${server.address}:${server.port}/eureka
+  instance:
+    hostname: ${server.address}
+    instance-id: ${spring.application.name}:${server.address}:${server.port}
+
+# actuator应用监控配置
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  file: logs/supergo/${spring.application.name}.log

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.SeckillorderMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.Seckillorder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="seckill_id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="money" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="user_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="seller_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="pay_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="status" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="receiver_address" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="receiver_mobile" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="receiver" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="transaction_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, seckill_id, money, user_id, seller_id, create_time, pay_time, status, receiver_address, 
+    receiver_mobile, receiver, transaction_id
+  </sql>
+</mapper>

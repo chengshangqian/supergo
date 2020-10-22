@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.OauthclientdetailsMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.Oauthclientdetails">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="client_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="resource_ids" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="client_secret" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="scope" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="authorized_grant_types" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="web_server_redirect_uri" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="authorities" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="access_token_validity" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="refresh_token_validity" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="additional_information" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="autoapprove" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    client_id, resource_ids, client_secret, scope, authorized_grant_types, web_server_redirect_uri, 
+    authorities, access_token_validity, refresh_token_validity, additional_information, 
+    autoapprove
+  </sql>
+</mapper>

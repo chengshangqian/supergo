@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.GoodsdescMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.Goodsdesc">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="goods_id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="introduction" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="specification_items" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="custom_attribute_items" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="item_images" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="package_list" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="sale_service" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    goods_id, introduction, specification_items, custom_attribute_items, item_images, 
+    package_list, sale_service
+  </sql>
+</mapper>

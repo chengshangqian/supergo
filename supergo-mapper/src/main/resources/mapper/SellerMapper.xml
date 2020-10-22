@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.SellerMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.Seller">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="seller_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nick_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="password" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="email" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="mobile" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="telephone" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="status" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="address_detail" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="linkman_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="linkman_qq" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="linkman_mobile" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="linkman_email" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="license_number" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="tax_number" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="org_number" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="address" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="logo_pic" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="brief" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="legal_person" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="legal_person_card_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="bank_user" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="bank_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    seller_id, name, nick_name, password, email, mobile, telephone, status, address_detail, 
+    linkman_name, linkman_qq, linkman_mobile, linkman_email, license_number, tax_number, 
+    org_number, address, logo_pic, brief, create_time, legal_person, legal_person_card_id, 
+    bank_user, bank_name
+  </sql>
+</mapper>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <idArg column="head_pic" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="username" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="password" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="phone" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="email" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="created" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="updated" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="source_type" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nick_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="status" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="qq" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="account_balance" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="is_mobile_check" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="is_email_check" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="sex" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="user_level" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="points" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="experience_value" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="birthday" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="last_login_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, head_pic, username, password, phone, email, created, updated, source_type, nick_name, 
+    name, status, qq, account_balance, is_mobile_check, is_email_check, sex, user_level, 
+    points, experience_value, birthday, last_login_time
+  </sql>
+</mapper>

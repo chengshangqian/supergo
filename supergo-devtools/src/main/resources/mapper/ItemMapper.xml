@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.ItemMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.Item">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="title" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="sell_point" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="price" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="stock_count" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="num" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="barcode" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="image" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="category_id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="status" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="update_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="item_sn" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="cost_pirce" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="market_price" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="is_default" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="goods_id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="seller_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="cart_thumbnail" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="category" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="brand" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="spec" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="seller" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, title, sell_point, price, stock_count, num, barcode, image, category_id, status, 
+    create_time, update_time, item_sn, cost_pirce, market_price, is_default, goods_id, 
+    seller_id, cart_thumbnail, category, brand, spec, seller
+  </sql>
+</mapper>

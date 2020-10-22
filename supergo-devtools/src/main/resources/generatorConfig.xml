@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--导入属性配置-->
+    <properties resource="db.properties"></properties>
+    <!--指定特定数据库的jdbc驱动jar包的位置-->
+    <!--<classPathEntry location="${jdbc.location}"/>-->
+    <context id="default" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <!--结合通用Mapper插件 指定生成 Mapper 的继承模板-->
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <!--<property name="mappers" value="com.kkb.utils.MyMapper"/>-->
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+        </plugin>
+        <!--pojo实现序列化接口-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <!--pojo类中增加toString方法-->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <!--覆盖生成XML文件 每次执行，把以前的mapper.xml覆盖而不是合并-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
+
+        <!-- 自动为entity生成swagger2文档-->
+        <plugin type="mybatis.generator.plugins.GeneratorSwagger2Doc">
+            <property name="apiModelAnnotationPackage"
+                      value="io.swagger.annotations.ApiModel"/>
+            <property name="apiModelPropertyAnnotationPackage"
+                      value="io.swagger.annotations.ApiModelProperty"/>
+        </plugin>
+
+        <!--注意， plugin 需要写在commentGenerator上面-->
+
+        <commentGenerator>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+        <!--jdbc的数据库连接 -->
+        <jdbcConnection
+                driverClass="${jdbc.driver}"
+                connectionURL="${jdbc.url}"
+                userId="${jdbc.username}"
+                password="${jdbc.password}">
+        </jdbcConnection>
+
+        <!-- 生成 JavaBean 对象重写 toString方法 -->
+        <!--        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />-->
+        <!-- 生成 JavaBean 对象继承 Serializable 类 -->
+        <!--        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />-->
+        <!-- 生成 JavaBean 对象重写 equals 和 hashCode 方法 -->
+        <!-- <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" /> -->
+
+        <!-- 对应生成的pojo所在包 -->
+        <javaModelGenerator targetPackage="com.supergo.pojo" targetProject="src/main/java">
+            <!-- 是否对model添加 构造函数 -->
+            <property name="constructorBased" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 对应生成的mapper所在目录 -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
+
+        <!-- 配置mapper对应的java映射 -->
+        <javaClientGenerator targetPackage="com.supergo.mapper" targetProject="src/main/java"
+                             type="XMLMAPPER"/>
+
+        <table schema="" tableName="oauth_access_token" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="oauth_approvals" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="oauth_client_details" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="oauth_client_token" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="oauth_code" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="oauth_refresh_token" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_address" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_areas" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_attribute" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_brand" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_cities" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_content" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_content_category" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_freight_template" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_goods" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_goods_desc" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_item" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_item_cat" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_order" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_order_item" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_pay_log" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_provinces" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_role" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_seckill_goods" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_seckill_order" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_seller" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_specification" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_specification_option" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_type_template" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_user" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+        <table schema="" tableName="tb_user_bak" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <domainObjectRenamingRule searchString="^Tb" replaceString=""/>
+        </table>
+
+    </context>
+</generatorConfiguration>

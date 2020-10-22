@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.supergo.mapper.OauthcodeMapper">
+  <resultMap id="BaseResultMap" type="com.supergo.pojo.Oauthcode">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <arg column="code" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.supergo.pojo.Oauthcode">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <arg column="code" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="authentication" javaType="_byte[]" jdbcType="LONGVARBINARY" />
+    </constructor>
+  </resultMap>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    authentication
+  </sql>
+</mapper>

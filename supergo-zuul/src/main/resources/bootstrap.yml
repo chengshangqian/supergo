@@ -1,0 +1,59 @@
+server:
+  address: 127.0.0.1
+  port: 80
+#  servlet:
+#    context-path: /api/v1 # 设置上下文路径
+
+spring:
+  application:
+    name: supergo-zuul
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false # 关闭负载均衡器的ribbon，解决一些警告
+
+# zuul路由网关配置
+zuul:
+  # 配置全局的前缀/api/v1,也可以通过server.servlet.context-path配置
+  prefix: /api/v1
+  routes:
+    supergo-manager-web: /m/** # 简易配置方式 {serviceId}: {path}
+    supergo-portal-web: /p/**
+#    supergo-portal-web: /p/**
+#      path: /p/**
+#      serviceId: supergo-portal-web
+#      sensitiveHeaders: # 置空sensitiveHeaders属性，让请求安全头的敏感信息可以转发，以完成后端服务中的安全认证
+  sensitiveHeaders:  # 转发自定义请求头，对所有路由
+  #retryable: true # 转发失败是否重试
+  host:
+    connect-timeout-millis: 50000  # 各种超时时间
+    socket-timeout-millis: 50000
+    connection-request-timeout-millis: 50000
+
+eureka:
+  instance:
+    hostname: ${server.address}
+    instance-id: ${spring.application.name}:${server.address}:${server.port}
+#    health-check-url-path: ${server.servlet.context-path}/actuator/health #网关设置了上下文路径，和zuul.prefix无关
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:2000/eureka
+
+# actuator应用监控配置
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# 自定义跨域属性设置
+cors:
+  enabled: true
+
+logging:
+  file: logs/supergo/${spring.application.name}.log

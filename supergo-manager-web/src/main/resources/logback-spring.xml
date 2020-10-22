@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 获取spring配置文件的属性 -->
+    <springProperty scope="context" name="loggingFile" source="logging.file" />
+
+    <!-- 设置日志文件保存目录 -->
+    <property name="LOG_FILE" value="${loggingFile}"/>
+
+    <!-- 使用spring-boot提供的基本配置 -->
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+
+    <!-- 设置ROOT：全局日志级别配置 -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+    <!-- 定义logger -->
+    <logger name="com.supergo" level="DEBUG"/>
+    <logger name="org.springframework" level="INFO"/>
+
+    <!-- 使用spring的profile：测试环境+开发环境. 多个使用逗号隔开. -->
+    <!--<springProfile name="test,dev">
+        <logger name="org.springframework" level="DEBUG">
+            <appender-ref ref="FILE"/>
+        </logger>
+        <logger name="com.fandou.coffee.learning" level="DEBUG" />
+    </springProfile>-->
+
+    <!-- 生产环境. -->
+    <!--<springProfile name="pro">
+        <logger name="org.springframework" level="ERROR">
+            <appender-ref ref="FILE"/>
+        </logger>
+        <logger name="com.fandou.coffee.learning" level="ERROR" />
+    </springProfile>-->
+
+</configuration>
