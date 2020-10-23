@@ -1,0 +1,834 @@
+2020-10-22 02:29:35.840  WARN 9028 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 02:29:35.856  INFO 9028 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 02:29:43.263  WARN 9028 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 02:29:45.045  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:29:45.092  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:29:47.499  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2281ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 02:29:47.514  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:29:47.530  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:29:47.546  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 02:29:48.233  WARN 9028 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 02:29:49.124  INFO 9028 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=64fcd468-faea-3858-a87e-c9cce35b243c
+2020-10-22 02:29:50.659  INFO 9028 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 02:30:06.103  INFO 9028 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 02:30:17.857  WARN 9028 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:30:17.857  INFO 9028 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:30:18.054  INFO 9028 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2c5708e7
+2020-10-22 02:30:24.985  INFO 9028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 02:30:29.209  WARN 9028 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:30:29.209  INFO 9028 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:30:32.331  INFO 9028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:30:34.893  INFO 9028 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 02:30:34.909  INFO 9028 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 02:30:34.909  INFO 9028 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 02:30:34.909  INFO 9028 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 02:30:44.448  WARN 9028 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:30:44.448  WARN 9028 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:30:44.448  WARN 9028 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:30:44.448  WARN 9028 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:30:51.801  INFO 9028 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 02:30:51.801  INFO 9028 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 02:30:51.801  INFO 9028 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 02:30:54.753  WARN 9028 --- [main] .d.e.r.s.AbstractElasticsearchRepository : Cannot create index: Timeout connecting to [localhost/127.0.0.1:9200]; nested exception is java.lang.RuntimeException: Timeout connecting to [localhost/127.0.0.1:9200]
+2020-10-22 02:30:56.753  INFO 9028 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 02:30:56.972  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 02:30:57.301  INFO 9028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 02:30:57.316  INFO 9028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 02:30:58.426  INFO 9028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 02:30:58.426  INFO 9028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 02:30:59.273  INFO 9028 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 02:30:59.633  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 02:30:59.633  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 02:30:59.633  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 02:30:59.633  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 02:30:59.633  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 02:30:59.633  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 02:30:59.633  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 02:31:00.195  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 02:31:00.195  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 02:31:00.195  INFO 9028 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 02:31:00.226  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603305060211 with initial instances count: 1
+2020-10-22 02:31:00.242  INFO 9028 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 02:31:00.242  INFO 9028 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305060242, current=UP, previous=STARTING]
+2020-10-22 02:31:00.242  INFO 9028 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:31:00.461  INFO 9028 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:31:01.374  INFO 9028 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 96.166 seconds (JVM running for 107.084)
+2020-10-22 02:31:05.015  INFO 9028 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 02:31:05.015  WARN 9028 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305065015, current=DOWN, previous=UP]
+2020-10-22 02:31:05.015  INFO 9028 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:31:05.031  INFO 9028 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:31:05.046  INFO 9028 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:31:05.203  INFO 9028 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 02:31:05.328  INFO 9028 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 02:31:05.328  INFO 9028 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 02:31:08.344  INFO 9028 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 02:31:08.359  INFO 9028 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 02:31:08.422  INFO 9028 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 02:38:13.514  WARN 656 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 02:38:13.573  INFO 656 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 02:38:18.003  WARN 656 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 02:38:19.153  INFO 656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:38:19.153  INFO 656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:38:19.803  INFO 656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 628ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 02:38:19.833  INFO 656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:38:19.833  INFO 656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:38:19.853  INFO 656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 02:38:20.198  WARN 656 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 02:38:21.353  INFO 656 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=64fcd468-faea-3858-a87e-c9cce35b243c
+2020-10-22 02:38:22.788  INFO 656 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 02:38:25.443  INFO 656 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 02:38:32.368  WARN 656 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:38:32.368  INFO 656 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:38:32.443  INFO 656 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@39a865c1
+2020-10-22 02:38:36.208  INFO 656 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 02:38:39.844  WARN 656 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:38:39.844  INFO 656 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:38:40.718  INFO 656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:38:41.523  INFO 656 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 02:38:41.523  INFO 656 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 02:38:41.528  INFO 656 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 02:38:41.528  INFO 656 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 02:38:42.772  WARN 656 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:38:42.772  WARN 656 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:38:42.792  WARN 656 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:38:42.793  WARN 656 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:38:43.303  INFO 656 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 02:38:43.313  INFO 656 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 02:38:43.313  INFO 656 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 02:38:43.313  INFO 656 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 02:38:43.313  WARN 656 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 02:38:44.703  WARN 656 --- [main] .d.e.r.s.AbstractElasticsearchRepository : Cannot create index: Index [com.supergo.goods.entity.Product] not found.; nested exception is [com.supergo.goods.entity.Product] ElasticsearchStatusException[Elasticsearch exception [type=invalid_index_name_exception, reason=Invalid index name [com.supergo.goods.entity.Product], must be lowercase]]
+2020-10-22 02:38:46.532  INFO 656 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 02:38:46.823  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 02:38:46.957  INFO 656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 02:38:46.957  INFO 656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 02:38:47.483  INFO 656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 02:38:47.483  INFO 656 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 02:38:48.022  INFO 656 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 02:38:48.413  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 02:38:48.413  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 02:38:48.413  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 02:38:48.413  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 02:38:48.413  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 02:38:48.413  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 02:38:48.413  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 02:38:48.693  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 02:38:48.693  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 02:38:48.703  INFO 656 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 02:38:48.718  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603305528703 with initial instances count: 1
+2020-10-22 02:38:48.724  INFO 656 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 02:38:48.724  INFO 656 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305528724, current=UP, previous=STARTING]
+2020-10-22 02:38:48.733  INFO 656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:38:48.847  INFO 656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:38:49.725  INFO 656 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 41.054 seconds (JVM running for 45.928)
+2020-10-22 02:38:50.963  INFO 656 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 02:38:50.963  WARN 656 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305530963, current=DOWN, previous=UP]
+2020-10-22 02:38:50.963  INFO 656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:38:50.982  INFO 656 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:38:51.003  INFO 656 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:38:51.063  INFO 656 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 02:38:51.103  INFO 656 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 02:38:51.108  INFO 656 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 02:38:54.113  INFO 656 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 02:38:54.138  INFO 656 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 02:38:54.173  INFO 656 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 02:40:23.907  WARN 12232 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 02:40:23.922  INFO 12232 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 02:40:26.297  WARN 12232 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 02:40:26.822  INFO 12232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:40:26.827  INFO 12232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:40:27.187  INFO 12232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 349ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 02:40:27.202  INFO 12232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:40:27.202  INFO 12232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:40:27.217  INFO 12232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 02:40:27.517  WARN 12232 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 02:40:28.042  INFO 12232 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=64fcd468-faea-3858-a87e-c9cce35b243c
+2020-10-22 02:40:28.967  INFO 12232 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 02:40:30.742  INFO 12232 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 02:40:34.892  WARN 12232 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:40:34.892  INFO 12232 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:40:34.942  INFO 12232 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@49fe0bcd
+2020-10-22 02:40:37.853  INFO 12232 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 02:40:41.072  WARN 12232 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:40:41.072  INFO 12232 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:40:41.952  INFO 12232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:40:42.592  INFO 12232 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 02:40:42.592  INFO 12232 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 02:40:42.592  INFO 12232 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 02:40:42.597  INFO 12232 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 02:40:43.366  WARN 12232 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:40:43.366  WARN 12232 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:40:43.366  WARN 12232 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:40:43.372  WARN 12232 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:40:43.707  INFO 12232 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 02:40:43.707  INFO 12232 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 02:40:43.707  INFO 12232 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 02:40:43.707  INFO 12232 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 02:40:43.707  WARN 12232 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 02:40:48.372  INFO 12232 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 02:40:48.482  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 02:40:48.645  INFO 12232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 02:40:48.645  INFO 12232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 02:40:49.131  INFO 12232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 02:40:49.132  INFO 12232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 02:40:49.660  INFO 12232 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 02:40:50.076  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 02:40:50.076  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 02:40:50.076  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 02:40:50.076  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 02:40:50.076  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 02:40:50.076  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 02:40:50.076  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 02:40:50.287  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 02:40:50.292  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 02:40:50.302  INFO 12232 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 02:40:50.307  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603305650302 with initial instances count: 1
+2020-10-22 02:40:50.317  INFO 12232 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 02:40:50.317  INFO 12232 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305650317, current=UP, previous=STARTING]
+2020-10-22 02:40:50.322  INFO 12232 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:40:50.442  INFO 12232 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:40:51.247  INFO 12232 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 30.276 seconds (JVM running for 34.641)
+2020-10-22 02:40:52.122  INFO 12232 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 02:40:52.122  WARN 12232 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305652122, current=DOWN, previous=UP]
+2020-10-22 02:40:52.122  INFO 12232 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:40:52.137  INFO 12232 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:40:52.152  INFO 12232 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:40:52.237  INFO 12232 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 02:40:52.257  INFO 12232 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 02:40:52.257  INFO 12232 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 02:40:55.262  INFO 12232 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 02:40:55.289  INFO 12232 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 02:40:55.317  INFO 12232 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 02:43:44.991  WARN 8488 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 02:43:45.006  INFO 8488 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 02:43:47.206  WARN 8488 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 02:43:47.765  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:43:47.770  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:43:48.115  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 339ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 02:43:48.130  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:43:48.135  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:43:48.156  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 02:43:48.531  WARN 8488 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 02:43:49.300  INFO 8488 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=64fcd468-faea-3858-a87e-c9cce35b243c
+2020-10-22 02:43:50.232  INFO 8488 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 02:43:52.100  INFO 8488 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 02:43:56.165  WARN 8488 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:43:56.165  INFO 8488 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:43:56.226  INFO 8488 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6be8ce1b
+2020-10-22 02:43:59.106  INFO 8488 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 02:44:02.495  WARN 8488 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:44:02.495  INFO 8488 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:44:03.050  INFO 8488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:44:03.690  INFO 8488 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 02:44:03.690  INFO 8488 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 02:44:03.690  INFO 8488 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 02:44:03.690  INFO 8488 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 02:44:04.625  WARN 8488 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:44:04.630  WARN 8488 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:44:04.630  WARN 8488 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:44:04.630  WARN 8488 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:44:04.980  INFO 8488 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 02:44:04.980  INFO 8488 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 02:44:04.980  INFO 8488 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 02:44:04.980  INFO 8488 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 02:44:04.980  WARN 8488 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 02:44:09.928  INFO 8488 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 02:44:10.025  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 02:44:10.182  INFO 8488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 02:44:10.182  INFO 8488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 02:44:10.727  INFO 8488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 02:44:10.727  INFO 8488 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 02:44:11.196  INFO 8488 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 02:44:11.600  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 02:44:11.600  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 02:44:11.600  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 02:44:11.600  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 02:44:11.605  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 02:44:11.605  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 02:44:11.605  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 02:44:11.811  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 02:44:11.817  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 02:44:11.823  INFO 8488 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 02:44:11.828  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603305851827 with initial instances count: 1
+2020-10-22 02:44:11.836  INFO 8488 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 02:44:11.838  INFO 8488 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305851838, current=UP, previous=STARTING]
+2020-10-22 02:44:11.885  INFO 8488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:44:12.026  INFO 8488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:44:12.852  INFO 8488 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 30.938 seconds (JVM running for 34.695)
+2020-10-22 02:44:13.900  INFO 8488 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 02:44:13.904  WARN 8488 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603305853900, current=DOWN, previous=UP]
+2020-10-22 02:44:13.905  INFO 8488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:44:13.923  INFO 8488 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:44:13.933  INFO 8488 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:44:14.009  INFO 8488 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 02:44:14.037  INFO 8488 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 02:44:14.050  INFO 8488 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 02:44:17.070  INFO 8488 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 02:44:17.091  INFO 8488 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 02:44:17.141  INFO 8488 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 02:54:44.208  WARN 7452 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 02:54:44.246  INFO 7452 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 02:54:49.036  WARN 7452 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 02:54:51.526  INFO 7452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:54:51.596  INFO 7452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:54:53.208  INFO 7452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1507ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 02:54:53.246  INFO 7452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:54:53.289  INFO 7452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:54:53.307  INFO 7452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 02:54:53.816  WARN 7452 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 02:54:55.271  INFO 7452 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abca9439-24be-35a2-a2ea-72124cd6211a
+2020-10-22 02:54:57.171  INFO 7452 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 02:55:04.226  INFO 7452 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 02:55:22.196  WARN 7452 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:55:22.196  INFO 7452 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:55:22.365  INFO 7452 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1221d607
+2020-10-22 02:55:30.396  INFO 7452 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 02:55:39.571  WARN 7452 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:55:39.571  INFO 7452 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:55:45.385  INFO 7452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:55:50.140  INFO 7452 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 02:55:50.140  INFO 7452 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 02:55:50.145  INFO 7452 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 02:55:50.145  INFO 7452 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 02:56:00.390  WARN 7452 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:56:00.390  WARN 7452 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:56:00.390  WARN 7452 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:56:00.390  WARN 7452 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:56:04.070  INFO 7452 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 02:56:04.075  INFO 7452 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 02:56:04.075  INFO 7452 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 02:56:04.075  INFO 7452 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 02:56:04.075  WARN 7452 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 02:56:31.230  INFO 7452 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 02:56:32.595  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 02:56:32.795  INFO 7452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 02:56:32.795  INFO 7452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 02:56:34.485  INFO 7452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 02:56:34.485  INFO 7452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 02:56:35.200  INFO 7452 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 02:56:35.615  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 02:56:35.615  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 02:56:35.615  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 02:56:35.615  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 02:56:35.620  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 02:56:35.620  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 02:56:35.620  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 02:56:36.015  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 02:56:36.050  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 02:56:36.055  INFO 7452 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 02:56:36.105  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603306596055 with initial instances count: 1
+2020-10-22 02:56:36.115  INFO 7452 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 02:56:36.115  INFO 7452 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306596115, current=UP, previous=STARTING]
+2020-10-22 02:56:36.125  INFO 7452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:56:36.330  INFO 7452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:56:37.500  INFO 7452 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 117.805 seconds (JVM running for 124.638)
+2020-10-22 02:56:42.300  INFO 7452 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 02:56:42.300  WARN 7452 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306602300, current=DOWN, previous=UP]
+2020-10-22 02:56:42.300  INFO 7452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:56:42.335  INFO 7452 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:56:42.350  INFO 7452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:56:42.655  INFO 7452 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 02:56:42.765  INFO 7452 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 02:56:42.775  INFO 7452 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 02:56:45.785  INFO 7452 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 02:56:45.825  INFO 7452 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 02:56:45.875  INFO 7452 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 02:57:51.324  WARN 3464 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 02:57:51.365  INFO 3464 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 02:57:54.280  WARN 3464 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 02:57:55.094  INFO 3464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:57:55.105  INFO 3464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:57:55.679  INFO 3464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 533ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 02:57:55.694  INFO 3464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 02:57:55.694  INFO 3464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 02:57:55.710  INFO 3464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 02:57:56.044  WARN 3464 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 02:57:56.734  INFO 3464 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abca9439-24be-35a2-a2ea-72124cd6211a
+2020-10-22 02:57:57.748  INFO 3464 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 02:58:00.039  INFO 3464 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 02:58:04.440  WARN 3464 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:58:04.445  INFO 3464 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:58:04.505  INFO 3464 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@397a10df
+2020-10-22 02:58:07.585  INFO 3464 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 02:58:10.635  WARN 3464 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 02:58:10.635  INFO 3464 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 02:58:11.379  INFO 3464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:58:12.019  INFO 3464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 02:58:12.019  INFO 3464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 02:58:12.019  INFO 3464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 02:58:12.019  INFO 3464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 02:58:13.101  WARN 3464 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:58:13.104  WARN 3464 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:58:13.104  WARN 3464 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:58:13.104  WARN 3464 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 02:58:13.415  INFO 3464 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 02:58:13.423  INFO 3464 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 02:58:13.423  INFO 3464 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 02:58:13.423  INFO 3464 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 02:58:13.423  WARN 3464 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 02:58:15.740  INFO 3464 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 02:58:15.849  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 02:58:15.999  INFO 3464 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 02:58:16.003  INFO 3464 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 02:58:16.499  INFO 3464 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 02:58:16.502  INFO 3464 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 02:58:17.079  INFO 3464 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 02:58:17.455  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 02:58:17.455  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 02:58:17.455  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 02:58:17.455  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 02:58:17.455  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 02:58:17.455  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 02:58:17.455  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 02:58:18.104  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 02:58:18.109  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 02:58:18.114  INFO 3464 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 02:58:18.124  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603306698119 with initial instances count: 1
+2020-10-22 02:58:18.126  INFO 3464 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 02:58:18.134  INFO 3464 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306698134, current=UP, previous=STARTING]
+2020-10-22 02:58:18.139  INFO 3464 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:58:18.869  INFO 3464 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:58:19.104  INFO 3464 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 31.072 seconds (JVM running for 35.312)
+2020-10-22 02:58:26.320 DEBUG 3464 --- [main] com.supergo.goods.GoodsServiceAppTest    : 创建文档成功？ : Product{id=1, productName='华为Nova7', productDesc='华为2020年最新5G手机', productPrice=2999.989999999999781721271574497222900390625}
+2020-10-22 02:58:26.374  INFO 3464 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 02:58:26.374  WARN 3464 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306706374, current=DOWN, previous=UP]
+2020-10-22 02:58:26.374  INFO 3464 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 02:58:26.384  INFO 3464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 02:58:26.399  INFO 3464 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 02:58:26.444  INFO 3464 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 02:58:26.459  INFO 3464 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 02:58:26.459  INFO 3464 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 02:58:29.464  INFO 3464 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 02:58:29.489  INFO 3464 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 02:58:29.534  INFO 3464 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 03:00:12.513  WARN 5828 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 03:00:12.528  INFO 5828 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 03:00:14.669  WARN 5828 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 03:00:15.243  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:00:15.252  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:00:15.648  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 388ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 03:00:15.663  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:00:15.663  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:00:15.678  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 03:00:16.013  WARN 5828 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 03:00:16.544  INFO 5828 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abca9439-24be-35a2-a2ea-72124cd6211a
+2020-10-22 03:00:17.398  INFO 5828 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 03:00:19.278  INFO 5828 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 03:00:23.763  WARN 5828 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:00:23.763  INFO 5828 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:00:23.818  INFO 5828 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@49fe0bcd
+2020-10-22 03:00:26.563  INFO 5828 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 03:00:29.938  WARN 5828 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:00:29.938  INFO 5828 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:00:30.720  INFO 5828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:00:31.421  INFO 5828 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 03:00:31.423  INFO 5828 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 03:00:31.423  INFO 5828 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 03:00:31.428  INFO 5828 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 03:00:32.245  WARN 5828 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:00:32.245  WARN 5828 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:00:32.247  WARN 5828 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:00:32.247  WARN 5828 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:00:32.603  INFO 5828 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 03:00:32.603  INFO 5828 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 03:00:32.603  INFO 5828 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 03:00:32.608  INFO 5828 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 03:00:32.608  WARN 5828 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 03:00:34.698  INFO 5828 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 03:00:34.798  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 03:00:34.948  INFO 5828 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 03:00:34.948  INFO 5828 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 03:00:35.334  INFO 5828 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 03:00:35.334  INFO 5828 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 03:00:35.825  INFO 5828 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 03:00:36.214  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 03:00:36.214  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 03:00:36.214  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 03:00:36.214  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 03:00:36.214  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 03:00:36.214  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 03:00:36.214  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 03:00:36.466  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 03:00:36.466  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 03:00:36.483  INFO 5828 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 03:00:36.493  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603306836488 with initial instances count: 1
+2020-10-22 03:00:36.508  INFO 5828 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 03:00:36.513  INFO 5828 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306836513, current=UP, previous=STARTING]
+2020-10-22 03:00:36.518  INFO 5828 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:00:36.976  INFO 5828 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:00:37.458  INFO 5828 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 27.861 seconds (JVM running for 31.592)
+2020-10-22 03:00:40.543 DEBUG 5828 --- [main] com.supergo.goods.GoodsServiceAppTest    : 查询文档成功？ : Product{id=1, productName='华为Nova7', productDesc='华为2020年最新5G手机', productPrice=2999.99}
+2020-10-22 03:00:40.588  INFO 5828 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 03:00:40.588  WARN 5828 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306840588, current=DOWN, previous=UP]
+2020-10-22 03:00:40.588  INFO 5828 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:00:40.597  INFO 5828 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:00:40.658  INFO 5828 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 03:00:40.678  INFO 5828 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 03:00:40.678  INFO 5828 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:00:40.678  INFO 5828 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 03:00:43.694  INFO 5828 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 03:00:43.743  INFO 5828 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 03:00:43.763  INFO 5828 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 03:01:52.828  WARN 7016 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 03:01:52.843  INFO 7016 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 03:01:55.420  WARN 7016 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 03:01:56.023  INFO 7016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:01:56.031  INFO 7016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:01:56.391  INFO 7016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 348ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 03:01:56.405  INFO 7016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:01:56.407  INFO 7016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:01:56.424  INFO 7016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 03:01:56.768  WARN 7016 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 03:01:57.268  INFO 7016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abca9439-24be-35a2-a2ea-72124cd6211a
+2020-10-22 03:01:58.363  INFO 7016 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 03:02:00.356  INFO 7016 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 03:02:04.682  WARN 7016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:02:04.682  INFO 7016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:02:04.716  INFO 7016 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@49fe0bcd
+2020-10-22 03:02:08.067  INFO 7016 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 03:02:11.493  WARN 7016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:02:11.493  INFO 7016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:02:12.208  INFO 7016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:02:12.945  INFO 7016 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 03:02:12.948  INFO 7016 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 03:02:12.948  INFO 7016 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 03:02:12.948  INFO 7016 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 03:02:13.944  WARN 7016 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:02:13.944  WARN 7016 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:02:13.944  WARN 7016 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:02:13.944  WARN 7016 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:02:14.352  INFO 7016 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 03:02:14.352  INFO 7016 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 03:02:14.352  INFO 7016 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 03:02:14.352  INFO 7016 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 03:02:14.352  WARN 7016 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 03:02:16.864  INFO 7016 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 03:02:16.984  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 03:02:17.145  INFO 7016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 03:02:17.146  INFO 7016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 03:02:17.554  INFO 7016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 03:02:17.555  INFO 7016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 03:02:18.155  INFO 7016 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 03:02:18.605  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 03:02:18.605  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 03:02:18.605  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 03:02:18.606  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 03:02:18.606  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 03:02:18.606  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 03:02:18.607  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 03:02:18.883  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 03:02:18.883  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 03:02:18.892  INFO 7016 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 03:02:18.902  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603306938897 with initial instances count: 1
+2020-10-22 03:02:18.913  INFO 7016 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 03:02:18.918  INFO 7016 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306938918, current=UP, previous=STARTING]
+2020-10-22 03:02:18.923  INFO 7016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:02:19.094  INFO 7016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:02:19.941  INFO 7016 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 30.23 seconds (JVM running for 34.365)
+2020-10-22 03:02:20.663 DEBUG 7016 --- [main] com.supergo.goods.GoodsServiceAppTest    : 查询文档成功？ : Product{id=1, productName='华为Nova7', productDesc='华为2020年最新5G手机', productPrice=2999.99}
+2020-10-22 03:02:20.948 DEBUG 7016 --- [main] com.supergo.goods.GoodsServiceAppTest    : 更新文档成功？ : Product{id=1, productName='华为Nova7pro', productDesc='华为2020年最新5G手机', productPrice=3999.989999999999781721271574497222900390625}
+2020-10-22 03:02:20.977  INFO 7016 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 03:02:20.977  WARN 7016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306940977, current=DOWN, previous=UP]
+2020-10-22 03:02:20.983  INFO 7016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:02:20.993  INFO 7016 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:02:21.017  INFO 7016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:02:21.173  INFO 7016 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 03:02:21.188  INFO 7016 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 03:02:21.188  INFO 7016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 03:02:24.203  INFO 7016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 03:02:24.254  INFO 7016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 03:02:24.281  INFO 7016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 03:02:50.702  WARN 12140 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 03:02:50.717  INFO 12140 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 03:02:52.902  WARN 12140 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 03:02:53.437  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:02:53.442  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:02:53.792  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 338ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 03:02:53.802  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:02:53.807  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:02:53.818  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 03:02:54.132  WARN 12140 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 03:02:54.698  INFO 12140 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abca9439-24be-35a2-a2ea-72124cd6211a
+2020-10-22 03:02:55.617  INFO 12140 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 03:02:57.827  INFO 12140 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 03:03:02.712  WARN 12140 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:03:02.712  INFO 12140 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:03:02.747  INFO 12140 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@49fe0bcd
+2020-10-22 03:03:06.027  INFO 12140 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 03:03:09.217  WARN 12140 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:03:09.217  INFO 12140 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:03:10.037  INFO 12140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:03:10.657  INFO 12140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 03:03:10.657  INFO 12140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 03:03:10.662  INFO 12140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 03:03:10.662  INFO 12140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 03:03:11.513  WARN 12140 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:03:11.513  WARN 12140 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:03:11.513  WARN 12140 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:03:11.513  WARN 12140 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:03:11.852  INFO 12140 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 03:03:11.852  INFO 12140 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 03:03:11.852  INFO 12140 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 03:03:11.852  INFO 12140 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 03:03:11.852  WARN 12140 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 03:03:13.867  INFO 12140 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 03:03:13.967  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 03:03:14.117  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 03:03:14.117  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 03:03:14.525  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 03:03:14.525  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 03:03:15.037  INFO 12140 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 03:03:15.422  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 03:03:15.422  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 03:03:15.422  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 03:03:15.422  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 03:03:15.422  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 03:03:15.424  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 03:03:15.424  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 03:03:15.712  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 03:03:15.712  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 03:03:15.723  INFO 12140 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 03:03:15.727  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603306995727 with initial instances count: 1
+2020-10-22 03:03:15.742  INFO 12140 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 03:03:15.742  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306995742, current=UP, previous=STARTING]
+2020-10-22 03:03:15.752  INFO 12140 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:03:15.912  INFO 12140 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:03:16.689  INFO 12140 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 29.203 seconds (JVM running for 34.174)
+2020-10-22 03:03:17.722 DEBUG 12140 --- [main] com.supergo.goods.GoodsServiceAppTest    : 删除文档成功
+2020-10-22 03:03:17.762  INFO 12140 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 03:03:17.762  WARN 12140 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603306997762, current=DOWN, previous=UP]
+2020-10-22 03:03:17.762  INFO 12140 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:03:17.772  INFO 12140 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:03:17.797  INFO 12140 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:03:17.837  INFO 12140 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 03:03:17.852  INFO 12140 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 03:03:17.852  INFO 12140 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 03:03:20.862  INFO 12140 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 03:03:20.892  INFO 12140 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 03:03:20.922  INFO 12140 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 03:04:31.431  WARN 2424 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 03:04:31.446  INFO 2424 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 03:04:33.647  WARN 2424 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 03:04:34.172  INFO 2424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:04:34.177  INFO 2424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:04:34.521  INFO 2424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 334ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 03:04:34.531  INFO 2424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:04:34.537  INFO 2424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:04:34.552  INFO 2424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 03:04:34.891  WARN 2424 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 03:04:35.476  INFO 2424 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abca9439-24be-35a2-a2ea-72124cd6211a
+2020-10-22 03:04:36.552  INFO 2424 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 03:04:38.621  INFO 2424 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 03:04:43.721  WARN 2424 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:04:43.726  INFO 2424 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:04:43.781  INFO 2424 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5627b8eb
+2020-10-22 03:04:47.336  INFO 2424 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 03:04:50.517  WARN 2424 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:04:50.517  INFO 2424 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:04:51.336  INFO 2424 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:04:52.125  INFO 2424 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 03:04:52.125  INFO 2424 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 03:04:52.125  INFO 2424 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 03:04:52.131  INFO 2424 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 03:04:53.117  WARN 2424 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:04:53.117  WARN 2424 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:04:53.122  WARN 2424 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:04:53.122  WARN 2424 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:04:53.437  INFO 2424 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 03:04:53.437  INFO 2424 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 03:04:53.437  INFO 2424 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 03:04:53.437  INFO 2424 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 03:04:53.437  WARN 2424 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 03:04:58.626  INFO 2424 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 03:04:58.731  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 03:04:58.912  INFO 2424 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 03:04:58.912  INFO 2424 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 03:04:59.372  INFO 2424 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 03:04:59.372  INFO 2424 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 03:04:59.882  INFO 2424 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 03:05:00.241  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 03:05:00.241  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 03:05:00.241  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 03:05:00.241  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 03:05:00.241  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 03:05:00.241  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 03:05:00.241  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 03:05:00.441  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 03:05:00.451  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 03:05:00.461  INFO 2424 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 03:05:00.471  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603307100466 with initial instances count: 1
+2020-10-22 03:05:00.476  INFO 2424 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 03:05:00.481  INFO 2424 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603307100481, current=UP, previous=STARTING]
+2020-10-22 03:05:00.492  INFO 2424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:05:00.586  INFO 2424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:05:01.411  INFO 2424 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 33.052 seconds (JVM running for 36.8)
+2020-10-22 03:05:02.701 DEBUG 2424 --- [main] com.supergo.goods.GoodsServiceAppTest    : 创建文档成功？ : Product{id=1, productName='华为Nova7', productDesc='华为2020年最新5G手机', productPrice=2999.989999999999781721271574497222900390625}
+2020-10-22 03:05:02.746  INFO 2424 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 03:05:02.746  WARN 2424 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603307102746, current=DOWN, previous=UP]
+2020-10-22 03:05:02.746  INFO 2424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:05:02.756  INFO 2424 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:05:02.821  INFO 2424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:05:02.826  INFO 2424 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 03:05:02.847  INFO 2424 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 03:05:02.847  INFO 2424 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 03:05:05.852  INFO 2424 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 03:05:05.962  INFO 2424 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 03:05:06.001  INFO 2424 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-10-22 03:25:33.969  WARN 5284 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/repositories/maven/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/D:/repositories/maven/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-10-22 03:25:34.047  INFO 5284 --- [main] com.supergo.goods.GoodsServiceAppTest    : No active profile set, falling back to default profiles: default
+2020-10-22 03:25:43.521  WARN 5284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.supergo.goods]' package. Please check your configuration.
+2020-10-22 03:25:44.850  INFO 5284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:25:44.896  INFO 5284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:25:45.975  INFO 5284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1034ms. Found 1 Elasticsearch repository interfaces.
+2020-10-22 03:25:46.022  INFO 5284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 03:25:46.093  INFO 5284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-22 03:25:46.109  INFO 5284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-22 03:25:46.593  WARN 5284 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-22 03:25:48.906  INFO 5284 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abca9439-24be-35a2-a2ea-72124cd6211a
+2020-10-22 03:25:50.672  INFO 5284 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-10-22 03:25:59.029  INFO 5284 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-22 03:26:23.022  WARN 5284 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:26:23.022  INFO 5284 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:26:23.163  INFO 5284 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1d988297
+2020-10-22 03:26:38.939  INFO 5284 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-10-22 03:26:43.259  WARN 5284 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-22 03:26:43.259  INFO 5284 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 03:26:44.476  INFO 5284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:26:45.338  INFO 5284 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-22 03:26:45.338  INFO 5284 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-22 03:26:45.338  INFO 5284 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-22 03:26:45.338  INFO 5284 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-22 03:26:47.589  WARN 5284 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:26:47.589  WARN 5284 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:26:47.589  WARN 5284 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:26:47.589  WARN 5284 --- [main] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-10-22 03:26:48.871  INFO 5284 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2020-10-22 03:26:48.871  INFO 5284 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2020-10-22 03:26:48.871  INFO 5284 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2020-10-22 03:26:48.871  INFO 5284 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.9.2
+2020-10-22 03:26:48.871  WARN 5284 --- [main] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.9.2
+2020-10-22 03:26:58.204  INFO 5284 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-22 03:26:58.376  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-22 03:26:58.563  INFO 5284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-22 03:26:58.563  INFO 5284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-22 03:26:59.376  INFO 5284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-22 03:26:59.376  INFO 5284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-22 03:26:59.938  INFO 5284 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-22 03:27:00.469  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-22 03:27:00.469  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-22 03:27:00.485  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-22 03:27:00.485  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-22 03:27:00.485  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-22 03:27:00.485  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-22 03:27:00.485  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-22 03:27:00.704  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-22 03:27:00.719  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-22 03:27:00.719  INFO 5284 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-22 03:27:00.735  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603308420735 with initial instances count: 1
+2020-10-22 03:27:00.751  INFO 5284 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SUPERGO-GOOGS-SERVICE with eureka with status UP
+2020-10-22 03:27:00.751  INFO 5284 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603308420751, current=UP, previous=STARTING]
+2020-10-22 03:27:00.766  INFO 5284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:27:00.949  INFO 5284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:27:02.340  INFO 5284 --- [main] com.supergo.goods.GoodsServiceAppTest    : Started GoodsServiceAppTest in 95.351 seconds (JVM running for 111.049)
+2020-10-22 03:27:06.097 DEBUG 5284 --- [main] com.supergo.goods.GoodsServiceAppTest    : 准备创建索引...
+2020-10-22 03:27:54.749 DEBUG 5284 --- [main] com.supergo.goods.GoodsServiceAppTest    : 获取IndexOperations...
+2020-10-22 03:28:00.344 DEBUG 5284 --- [main] com.supergo.goods.GoodsServiceAppTest    : 索引是否已存在？ : true
+2020-10-22 03:28:08.783  INFO 5284 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SUPERGO-GOOGS-SERVICE with eureka with status DOWN
+2020-10-22 03:28:08.783  WARN 5284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603308488783, current=DOWN, previous=UP]
+2020-10-22 03:28:08.783  INFO 5284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000: registering service...
+2020-10-22 03:28:08.799  INFO 5284 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-22 03:28:08.862  INFO 5284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - registration status: 204
+2020-10-22 03:28:09.019  INFO 5284 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-22 03:28:09.046  INFO 5284 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-22 03:28:09.046  INFO 5284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-10-22 03:28:12.062  INFO 5284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-10-22 03:28:12.093  INFO 5284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SUPERGO-GOOGS-SERVICE/supergo-googs-service:127.0.0.1:8000 - deregister  status: 200
+2020-10-22 03:28:12.124  INFO 5284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

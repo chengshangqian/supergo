@@ -76,18 +76,21 @@
                     type="text"
                     v-model="keywords"
                     class="input-error input-xxlarge"
-                    @input="seachInp"
-                    @focus="seachFocus"
+                    @input="searchInp"
+                    @focus="searchFocus"
                   />
                   <button class="sui-btn btn-xlarge btn-danger" type="button" @click="goSearch">搜索</button>
                 </div>
               </form>
-              <ul class="search-hint" v-show="isShowHint&&hintList.length>0" >
+
+              <!-- 搜索下拉列表：绑定hintList对象 -->
+              <ul class="search-hint" v-show="isShowHint && hintList.length > 0" >
                 <li v-for="item in hintList" :key="item" @click="addKeywords(item)">{{item}}</li>
                 <li @click="isShowHint=false">
                   <p>关闭</p>
                 </li>
               </ul>
+
             </div>
             <div class="hotwords">
               <ul>
@@ -139,7 +142,9 @@
 </template>
 
 <script>
-import { search, seachList } from "@/api";
+// 导入搜索api
+import { search, searchList } from "@/api";
+
 export default {
   name: "head",
   data() {
@@ -156,23 +161,30 @@ export default {
   },
   mounted() {},
   methods: {
-    // 获取搜索联想词
-    async seachInp() {
+    // 根据输入的搜索关键字获取相关商品列表
+    async searchInp() {
+      // 调用查询API从ES获取相关商品列表
       const {
         status,
         data: { data }
-      } = await seachList(this.keywords);
-      console.log(data)
+      } = await searchList(this.keywords);
+
+      // 打印
+      console.log(data);
+
+      // 如果状态OK，将获取的商品列表绑定VUE的变量然后展示在前端页面
       if (status === 200) {
         this.hintList = data;
-        this.isShowHint = true
+        this.isShowHint = true;
       }
     },
-    seachFocus() {
+
+    searchFocus() {
       if (this.hintList.length > 0) {
         this.isShowHint = true;
       }
     },
+
     addKeywords(keywords) {
       console.log(keywords)
       if (keywords) {
@@ -180,7 +192,8 @@ export default {
         this.isShowHint = false;
       }
     },
-    // 搜索
+
+    // 跳转到搜索页
     goSearch() {
       // console.log(132132131)
       // localStorage.setItem('keywords',this.keywords)
@@ -189,6 +202,7 @@ export default {
         query: { keywords: this.keywords }
       });
     },
+
     debounce(func, wait, flag) {
       var timeout;
       var self = this;
