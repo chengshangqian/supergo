@@ -1,7 +1,7 @@
 package com.supergo.portal;
 
-import com.supergo.portal.dao.ItemRepository;
-import com.supergo.portal.entity.Item;
+import com.supergo.portal.dao.GoodsRepository;
+import com.supergo.portal.entity.Goods;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,13 +29,13 @@ class PortalAppTest {
     private ElasticsearchRestTemplate elasticsearchRestTemplate;
 
     @Autowired
-    private ItemRepository itemRepository;
+    private GoodsRepository goodsRepository;
 
     @Test
     void createIndex(){
         LOGGER.debug("准备创建索引...");
         LOGGER.debug("获取IndexOperations...");
-        IndexOperations ops = elasticsearchRestTemplate.indexOps(Item.class);
+        IndexOperations ops = elasticsearchRestTemplate.indexOps(Goods.class);
         boolean exists = ops.exists();
         LOGGER.debug("索引是否已存在？ : {}",exists);
         if(!exists){
@@ -49,90 +49,90 @@ class PortalAppTest {
     @Test
     void addDocument() {
         //创建对象
-        Item item = new Item();
-        item.setId(1L);
-        item.setItemName("华为Nova7");
-        item.setItemDesc("华为2020年最新5G手机");
-        item.setItemPrice(new BigDecimal(2999.99D));
+        Goods goods = new Goods();
+        goods.setId(1L);
+        goods.setGoodsName("华为Nova7");
+        goods.setGoodsDesc("华为2020年最新5G手机");
+        goods.setGoodsPrice(new BigDecimal(2999.99D));
 
         //保存对象 -> 保存到ES中
-        Item saveItem = itemRepository.save(item);
-        assertNotNull(saveItem);
-        LOGGER.debug("创建文档成功？ : {}", saveItem);
+        Goods saveGoods = goodsRepository.save(goods);
+        assertNotNull(saveGoods);
+        LOGGER.debug("创建文档成功？ : {}", saveGoods);
     }
 
     @Test
     void addDocumentAll() {
         //创建对象
-        Item item = new Item();
-        item.setId(1L);
-        item.setItemName("华为Nova7");
-        item.setItemDesc("华为2020年最新5G手机");
-        item.setItemPrice(new BigDecimal(2999.99D));
+        Goods goods = new Goods();
+        goods.setId(1L);
+        goods.setGoodsName("华为Nova7");
+        goods.setGoodsDesc("华为2020年最新5G手机");
+        goods.setGoodsPrice(new BigDecimal(2999.99D));
         //保存对象 -> 保存到ES中
-        Item saveItem = itemRepository.save(item);
-        assertNotNull(saveItem);
+        Goods saveGoods = goodsRepository.save(goods);
+        assertNotNull(saveGoods);
 
-        Item sumsang = new Item();
+        Goods sumsang = new Goods();
         sumsang.setId(2L);
-        sumsang.setItemName("三星Galaxy10");
-        sumsang.setItemDesc("三星折叠手机之王");
-        sumsang.setItemPrice(new BigDecimal(4999.99D));
-        itemRepository.save(sumsang);
+        sumsang.setGoodsName("三星Galaxy10");
+        sumsang.setGoodsDesc("三星折叠手机之王");
+        sumsang.setGoodsPrice(new BigDecimal(4999.99D));
+        goodsRepository.save(sumsang);
 
-        Item apple = new Item();
+        Goods apple = new Goods();
         apple.setId(3L);
-        apple.setItemName("苹果Iphone12");
-        apple.setItemDesc("苹果新一代手机力作");
-        apple.setItemPrice(new BigDecimal(6999.99D));
-        itemRepository.save(apple);
+        apple.setGoodsName("苹果Iphone12");
+        apple.setGoodsDesc("苹果新一代手机力作");
+        apple.setGoodsPrice(new BigDecimal(6999.99D));
+        goodsRepository.save(apple);
     }
 
     @Test
     //查询
     void findDocument() {
         //springData的单体查询,结果会封装到Optional对象
-        Optional<Item> result = itemRepository.findById( 1L);
+        Optional<Goods> result = goodsRepository.findById( 1L);
         //取出封装的查询结果
         if(result.isPresent()){
-            Item item = result.get();
-            LOGGER.debug("查询文档成功？ : {}", item);
+            Goods goods = result.get();
+            LOGGER.debug("查询文档成功？ : {}", goods);
         }
     }
 
     @Test
     void updateDocument() {
-        Optional<Item> result = itemRepository.findById( 1L);
+        Optional<Goods> result = goodsRepository.findById( 1L);
         if(result.isPresent()){
-            Item item = result.get();
-            LOGGER.debug("查询文档成功？ : {}", item);
-            LOGGER.debug("查询文档成功？ : {}", item);
+            Goods goods = result.get();
+            LOGGER.debug("查询文档成功？ : {}", goods);
+            LOGGER.debug("查询文档成功？ : {}", goods);
 
-            item.setItemName("华为Nova7pro");
-            item.setItemPrice(new BigDecimal(3999.99D));
+            goods.setGoodsName("华为Nova7pro");
+            goods.setGoodsPrice(new BigDecimal(3999.99D));
 
             //记录存在就是修改, 不存在就是添加
-            Item updateItem = itemRepository.save(item);
-            LOGGER.debug("更新文档成功？ : {}", updateItem);
+            Goods updateGoods = goodsRepository.save(goods);
+            LOGGER.debug("更新文档成功？ : {}", updateGoods);
         }
     }
 
     @Test
     void deleteDocument() {
-        itemRepository.deleteById(1L);
+        goodsRepository.deleteById(1L);
         LOGGER.debug("删除文档成功");
     }
 
     @Test
-    void findByItemNameOrItemDesc() {
+    void findByGoodsNameOrGoodsDesc() {
         String keywords = "5G";
         // 排序字段
-        String itemId = "item_id";
-        Pageable pageable = PageRequest.of(0,10, Sort.by(Sort.Direction.ASC,itemId));
-        Page<Item> results = itemRepository.findByItemNameOrItemDesc(keywords,keywords, pageable);
-        results.getContent().forEach(item -> {
+        String searchGoodsId = "goods_id";
+        Pageable pageable = PageRequest.of(0,10, Sort.by(Sort.Direction.ASC,searchGoodsId));
+        Page<Goods> results = goodsRepository.findByGoodsNameOrGoodsDesc(keywords,keywords, pageable);
+        results.getContent().forEach(goods -> {
             if(LOGGER.isDebugEnabled()){
-                LOGGER.debug("item => {}",item);
+                LOGGER.debug("searchGoods => {}", goods);
             }
         });
     }
