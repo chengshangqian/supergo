@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // 获取首页菜单列表
 export function leftMenu (){
     return request({
-        url:'http://127.0.0.1/api/v1/p/items/categories',
+        url:'http://127.0.0.1/api/v1/p/categories',
         method:'get'
     })
 }

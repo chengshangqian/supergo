@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Api(tags = "商品分类")
-@RequestMapping("/items")
+@RequestMapping("/categories")
 public class ItemCategoryController {
     // 日志
     public static final Logger LOGGER = LoggerFactory.getLogger(ItemCategoryController.class);
@@ -22,7 +22,7 @@ public class ItemCategoryController {
     @ApiResponses(
             @ApiResponse(code = 200, message = "返回JSON格式的商品分类列表信息")
     )
-    @GetMapping("/categories")
+    @GetMapping
     public HttpResult allItemCategories() {
         return itemCategoryServiceClient.allItemCategories();
     }
