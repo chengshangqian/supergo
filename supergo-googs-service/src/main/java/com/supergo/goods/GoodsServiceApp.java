@@ -9,7 +9,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @ServletComponentScan
 @EnableDiscoveryClient
-@MapperScan("com.supergo.mapper")
+@MapperScan({"com.supergo.mapper"})
 //@EnableCaching //开启本地应用缓存
 public class GoodsServiceApp {
     public static void main(String[] args) {

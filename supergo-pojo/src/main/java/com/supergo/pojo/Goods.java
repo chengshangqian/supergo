@@ -6,12 +6,92 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
 @ApiModel(value="com.supergo.pojo.Goods")
 @Table(name = "tb_goods")
 public class Goods implements Serializable {
+
+/***************************** 扩充属性start ******************************/
+    /**
+     * 商家名称
+     */
+    @Transient
+    @ApiModelProperty(value="商家名称")
+    private String nickName;
+
+    /**
+     * 品牌名称
+     */
+    @Transient
+    @ApiModelProperty(value="品牌名称")
+    private String brandName;
+
+    /**
+     * 一级类目名称
+     */
+    @Transient
+    @ApiModelProperty(value="一级类目名称")
+    private String category1Name;
+
+    /**
+     * 二级类目名称
+     */
+    @Transient
+    @ApiModelProperty(value="二级类目名称")
+    private String category2Name;
+
+    /**
+     * 三级类目名称
+     */
+    @Transient
+    @ApiModelProperty(value="三级类目名称")
+    private String category3Name;
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public String getBrandName() {
+        return brandName;
+    }
+
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
+    }
+
+    public String getCategory1Name() {
+        return category1Name;
+    }
+
+    public void setCategory1Name(String category1Name) {
+        this.category1Name = category1Name;
+    }
+
+    public String getCategory2Name() {
+        return category2Name;
+    }
+
+    public void setCategory2Name(String category2Name) {
+        this.category2Name = category2Name;
+    }
+
+    public String getCategory3Name() {
+        return category3Name;
+    }
+
+    public void setCategory3Name(String category3Name) {
+        this.category3Name = category3Name;
+    }
+
+    /***************************** 扩充属性end ******************************/
+
     /**
      * 主键
      */
@@ -457,6 +537,11 @@ public class Goods implements Serializable {
         sb.append(", typeTemplateId=").append(typeTemplateId);
         sb.append(", isEnableSpec=").append(isEnableSpec);
         sb.append(", isDelete=").append(isDelete);
+        sb.append(", nickName=").append(nickName);
+        sb.append(", brandName=").append(brandName);
+        sb.append(", category1Name=").append(category1Name);
+        sb.append(", category2Name=").append(category2Name);
+        sb.append(", category3Name=").append(category3Name);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
