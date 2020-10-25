@@ -1,18 +1,23 @@
-package com.supergo.portal.entity;
+package com.supergo.common.elasticsearch;
 
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * 搜索结果
+ *
+ * @param <T>
+ */
 public class SearchResult<T> implements Serializable {
-    private List<T> resultList;
+    private List<T> results;
     private List<?> aggs;
 
-    public List<T> getResultList() {
-        return resultList;
+    public List<T> getResults() {
+        return results;
     }
 
-    public void setResultList(List<T> resultList) {
-        this.resultList = resultList;
+    public void setResults(List<T> results) {
+        this.results = results;
     }
 
     public List<?> getAggs() {

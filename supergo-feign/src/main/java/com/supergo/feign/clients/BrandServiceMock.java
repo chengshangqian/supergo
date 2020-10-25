@@ -1,13 +1,11 @@
 package com.supergo.feign.clients;
 
 import com.supergo.common.http.HttpResult;
-import com.supergo.pojo.Item;
-import org.springframework.stereotype.Service;
+import com.supergo.pojo.Brand;
 
-@Service
-public class ItemServiceMock implements ItemServiceClient {
+public class BrandServiceMock implements BrandServiceClient {
     @Override
-    public HttpResult post(Item item) {
+    public HttpResult post(Brand brand) {
         return null;
     }
 
@@ -17,7 +15,7 @@ public class ItemServiceMock implements ItemServiceClient {
     }
 
     @Override
-    public HttpResult put(Long id, Item item) {
+    public HttpResult put(Long id, Brand brand) {
         return null;
     }
 
@@ -27,7 +25,7 @@ public class ItemServiceMock implements ItemServiceClient {
     }
 
     @Override
-    public HttpResult query(Integer page, Integer size, Item item) {
+    public HttpResult query(Integer page, Integer size, Brand brand) {
         return null;
     }
 }

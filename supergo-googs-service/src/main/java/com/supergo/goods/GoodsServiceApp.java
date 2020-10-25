@@ -13,6 +13,6 @@ import tk.mybatis.spring.annotation.MapperScan;
 //@EnableCaching //开启本地应用缓存
 public class GoodsServiceApp {
     public static void main(String[] args) {
-        SpringApplication.run(GoodsServiceApp.class,args);
+        SpringApplication.run(GoodsServiceApp.class, args);
     }
 }

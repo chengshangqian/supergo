@@ -19,7 +19,7 @@ public class GoodsQueryProvider {
     // 日志
     private static final Logger LOGGER = LoggerFactory.getLogger(GoodsQueryProvider.class);
 
-    public String query(Goods goods){
+    public String query(Goods goods) {
         Class<Goods> goodsClass = Goods.class; // 实体类
         EntityTable goodsEntityTable = EntityHelper.getEntityTable(goodsClass); // 实体-表对象
         Map<String, EntityColumn> propertyEntityColumns = goodsEntityTable.getPropertyMap(); // 属性-列对象集合
@@ -32,35 +32,34 @@ public class GoodsQueryProvider {
         // 遍历所有的属性-列，检测当前查询对象对应属性是否有赋值，如果有赋值，则将对应属性字段将拼装到SQL语句中
         propertyEntityColumns.forEach((property, column) -> {
 
-            if(LOGGER.isDebugEnabled()){
-                LOGGER.debug("开始尝试拼装{}属性...",property);
+            if (LOGGER.isDebugEnabled()) {
+                LOGGER.debug("开始尝试拼装{}属性...", property);
             }
 
             EntityField field = column.getEntityField();
             try {
                 // TODO 反射效率低
-                if(null != field.getValue(goods)){
+                if (null != field.getValue(goods)) {
                     String condition = "";
                     // 产品名称和副标题使用模糊查询 TODO 注入风险
-                    if(property.equals("goodsName") || property.equals("caption")){
+                    if (property.equals("goodsName") || property.equals("caption")) {
                         condition = String.format("%s like concat(concat('%%',#{%s}), '%%')", column.getColumn(), property);
-                    }
-                    else{
+                    } else {
                         condition = String.format("%s = #{%s}", column.getColumn(), property);
                     }
                     sql.WHERE(condition);
-                    if(LOGGER.isDebugEnabled()){
-                        LOGGER.debug("{}属性拼装成功...",property);
+                    if (LOGGER.isDebugEnabled()) {
+                        LOGGER.debug("{}属性拼装成功...", property);
                     }
                 }
             } catch (IllegalAccessException | InvocationTargetException ex) {
-                if(LOGGER.isWarnEnabled()){
-                    LOGGER.warn("尝试使用属性[{}]的getter方法获取属性值时出错 ： {}，将放弃此属性字段的拼装...",property,ex.getMessage());
+                if (LOGGER.isWarnEnabled()) {
+                    LOGGER.warn("尝试使用属性[{}]的getter方法获取属性值时出错 ： {}，将放弃此属性字段的拼装...", property, ex.getMessage());
                 }
             }
         });
 
-        if(!StringUtils.isEmpty(EntityHelper.getOrderByClause(goodsClass))) {
+        if (!StringUtils.isEmpty(EntityHelper.getOrderByClause(goodsClass))) {
             sql.ORDER_BY(EntityHelper.getOrderByClause(goodsClass));
         }
 

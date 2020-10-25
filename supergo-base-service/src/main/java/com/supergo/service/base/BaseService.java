@@ -45,20 +45,20 @@ public interface BaseService<T> {
      * 分页查询列表
      *
      * @param page 页号
-     * @param rows 页大小
+     * @param size 页大小
      * @return 分页实体对象
      */
-   public PageResult findPage(Integer page, Integer rows);
+   public PageResult findPage(Integer page, Integer size);
 
     /**
      * 根据条件分页查询列表
      *
      * @param page 页号
-     * @param rows 页大小
+     * @param size 页大小
      * @param t    查询条件对象
      * @return 分页实体对象
      */
-   public PageResult findPage(Integer page, Integer rows, T t);
+   public PageResult findPage(Integer page, Integer size, T t);
 
     /**
      * 新增

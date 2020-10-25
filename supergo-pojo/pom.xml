@@ -23,5 +23,11 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
         </dependency>
+        <!-- elasticsearch搜索引擎起步依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 </project>

@@ -13,33 +13,33 @@ public class ItemController {
     private ItemService itemService;
 
     @PostMapping
-    public HttpResult post(@RequestBody Item item){
+    public HttpResult post(@RequestBody Item item) {
         itemService.add(item);
         return HttpResult.ok();
     }
 
     @DeleteMapping("/{id}")
-    public HttpResult delete(@PathVariable("id") Long id){
+    public HttpResult delete(@PathVariable("id") Long id) {
         itemService.deleteByIds(new Long[]{id});
         return HttpResult.ok();
     }
 
     @PutMapping("/{id}")
-    public HttpResult put(@PathVariable("id") Long id,@RequestBody Item item){
+    public HttpResult put(@PathVariable("id") Long id, @RequestBody Item item) {
         item.setId(id);
         itemService.add(item);
         return HttpResult.ok();
     }
 
     @GetMapping("/{id}")
-    public HttpResult get(@PathVariable("id") Long id){
+    public HttpResult get(@PathVariable("id") Long id) {
         return HttpResult.ok(itemService.findOne(id));
     }
 
-    @PostMapping("/query/{page}/{rows}")
+    @PostMapping("/query/{page}/{size}")
     public HttpResult query(@PathVariable(value = "page") Integer page,
-                            @PathVariable(value = "rows") Integer rows,
-                            @RequestBody Item item){
-        return HttpResult.ok(itemService.findPage(page,rows,item));
+                            @PathVariable(value = "size") Integer size,
+                            @RequestBody Item item) {
+        return HttpResult.ok(itemService.findPage(page, size, item));
     }
 }

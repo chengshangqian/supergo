@@ -5,5 +5,5 @@ import com.supergo.pojo.Goods;
 import com.supergo.service.base.BaseService;
 
 public interface GoodsService extends BaseService<Goods> {
-    PageResult query(Integer page, Integer rows, Goods goods);
+    PageResult query(Integer page,Integer size, Goods goods);
 }

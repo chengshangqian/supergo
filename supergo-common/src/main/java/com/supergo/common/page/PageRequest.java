@@ -3,26 +3,27 @@ package com.supergo.common.page;
 import java.io.Serializable;
 
 /**
- * Created by on 2019/5/22.
+ * 分页请求
  */
 public class PageRequest implements Serializable{
 
-    private Integer currentPage=1;
-    private Integer pageSize=10;
+    private Integer page = 1;
 
-    public Integer getCurrentPage() {
-        return currentPage;
+    private Integer size = 10;
+
+    public Integer getPage() {
+        return page;
     }
 
-    public void setCurrentPage(Integer currentPage) {
-        this.currentPage = currentPage;
+    public void setPage(Integer page) {
+        this.page = page;
     }
 
-    public Integer getPageSize() {
-        return pageSize;
+    public Integer getSize() {
+        return size;
     }
 
-    public void setPageSize(Integer pageSize) {
-        this.pageSize = pageSize;
+    public void setSize(Integer size) {
+        this.size = size;
     }
 }

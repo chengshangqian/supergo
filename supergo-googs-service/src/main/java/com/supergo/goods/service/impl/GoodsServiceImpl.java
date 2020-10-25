@@ -23,18 +23,18 @@ public class GoodsServiceImpl extends BaseServiceImpl<Goods> implements GoodsSer
     private GoodsQueryMapper goodsQueryMapper;
 
     @Override
-    public PageResult query(Integer page, Integer rows, Goods goods) {
+    public PageResult query(Integer page, Integer size, Goods goods) {
 
-        PageHelper.startPage(page, rows);
+        PageHelper.startPage(page, size);
 
         List<Goods> list = goodsQueryMapper.query(goods);
 
-        if(LOGGER.isDebugEnabled()){
-            LOGGER.debug("list => {}",list);
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("list => {}", list);
         }
 
         PageInfo<Goods> pageInfo = new PageInfo<>(list);
 
-        return new PageResult(pageInfo.getTotal(),pageInfo.getList(),pageInfo.getPageNum());
+        return new PageResult(pageInfo.getTotal(), pageInfo.getList(), pageInfo.getPageNum());
     }
 }

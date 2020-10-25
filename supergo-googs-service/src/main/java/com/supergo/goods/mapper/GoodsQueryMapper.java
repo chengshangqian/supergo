@@ -9,27 +9,27 @@ import java.util.List;
 public interface GoodsQueryMapper {
     @SelectProvider(type = GoodsQueryProvider.class, method = "query")
     @Results({
-            @Result(column="id",property="id"),
-            @Result(column="seller_id",property="sellerId"),
-            @Result(column="goods_name",property="goodsName"),
-            @Result(column="default_item_id",property="defaultItemId"),
-            @Result(column="audit_status",property="auditStatus"),
-            @Result(column="is_marketable",property="isMarketable"),
-            @Result(column="brand_id",property="brandId"),
-            @Result(column="caption",property="caption"),
-            @Result(column="category1_id",property="category1Id"),
-            @Result(column="category2_id",property="category2Id"),
-            @Result(column="category3_id",property="category3Id"),
-            @Result(column="small_pic",property="smallPic"),
-            @Result(column="price",property="price"),
-            @Result(column="type_template_id",property="typeTemplateId"),
-            @Result(column="is_enable_spec",property="isEnableSpec"),
-            @Result(column="is_delete",property="isDelete"),
-            @Result(column="seller_id",property="nickName",one=@One(select="selectSellerName")),
-            @Result(column="brand_id",property="brandName",one=@One(select="selectBrandName")),
-            @Result(column="category1_id",property="category1Name",one=@One(select="selectCategoryName")),
-            @Result(column="category2_id",property="category2Name",one=@One(select="selectCategoryName")),
-            @Result(column="category3_id",property="category3Name",one=@One(select="selectCategoryName"))
+            @Result(column = "id", property = "id"),
+            @Result(column = "seller_id", property = "sellerId"),
+            @Result(column = "goods_name", property = "goodsName"),
+            @Result(column = "default_item_id", property = "defaultItemId"),
+            @Result(column = "audit_status", property = "auditStatus"),
+            @Result(column = "is_marketable", property = "isMarketable"),
+            @Result(column = "brand_id", property = "brandId"),
+            @Result(column = "caption", property = "caption"),
+            @Result(column = "category1_id", property = "category1Id"),
+            @Result(column = "category2_id", property = "category2Id"),
+            @Result(column = "category3_id", property = "category3Id"),
+            @Result(column = "small_pic", property = "smallPic"),
+            @Result(column = "price", property = "price"),
+            @Result(column = "type_template_id", property = "typeTemplateId"),
+            @Result(column = "is_enable_spec", property = "isEnableSpec"),
+            @Result(column = "is_delete", property = "isDelete"),
+            @Result(column = "seller_id", property = "nickName", one = @One(select = "selectSellerName")),
+            @Result(column = "brand_id", property = "brandName", one = @One(select = "selectBrandName")),
+            @Result(column = "category1_id", property = "category1Name", one = @One(select = "selectCategoryName")),
+            @Result(column = "category2_id", property = "category2Name", one = @One(select = "selectCategoryName")),
+            @Result(column = "category3_id", property = "category3Name", one = @One(select = "selectCategoryName"))
     })
     List<Goods> query(Goods goods);
 

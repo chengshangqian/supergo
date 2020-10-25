@@ -38,8 +38,8 @@ public abstract class BaseServiceImpl<T> implements BaseService<T> {
     }
 
    @Override
-    public PageResult findPage(Integer page, Integer rows) {
-        PageHelper.startPage(page, rows);
+    public PageResult findPage(Integer page, Integer size) {
+        PageHelper.startPage(page, size);
         List<T> list = mapper.selectAll();
         PageInfo<T> pageInfo = new PageInfo<>(list);
         return new PageResult(pageInfo.getTotal(),
@@ -47,8 +47,8 @@ public abstract class BaseServiceImpl<T> implements BaseService<T> {
     }
 
   @Override
-    public PageResult findPage(Integer page, Integer rows, T t) {
-        PageHelper.startPage(page, rows);
+    public PageResult findPage(Integer page, Integer size, T t) {
+        PageHelper.startPage(page, size);
         List<T> list = mapper.select(t);
         PageInfo<T> pageInfo = new PageInfo<>(list);
         return new PageResult(pageInfo.getTotal(),

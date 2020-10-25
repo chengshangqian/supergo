@@ -2,6 +2,9 @@ package com.supergo.pojo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
@@ -12,6 +15,7 @@ import java.math.BigDecimal;
 
 @ApiModel(value="com.supergo.pojo.Goods")
 @Table(name = "tb_goods")
+@Document(indexName = "goods")
 public class Goods implements Serializable {
 
 /***************************** 扩充属性start ******************************/
@@ -20,6 +24,7 @@ public class Goods implements Serializable {
      */
     @Transient
     @ApiModelProperty(value="商家名称")
+    @Field(type = FieldType.Keyword)
     private String nickName;
 
     /**
@@ -27,6 +32,7 @@ public class Goods implements Serializable {
      */
     @Transient
     @ApiModelProperty(value="品牌名称")
+    @Field(type = FieldType.Keyword)
     private String brandName;
 
     /**
@@ -34,6 +40,7 @@ public class Goods implements Serializable {
      */
     @Transient
     @ApiModelProperty(value="一级类目名称")
+    @Field(type = FieldType.Keyword)
     private String category1Name;
 
     /**
@@ -41,6 +48,7 @@ public class Goods implements Serializable {
      */
     @Transient
     @ApiModelProperty(value="二级类目名称")
+    @Field(type = FieldType.Keyword)
     private String category2Name;
 
     /**
@@ -48,6 +56,7 @@ public class Goods implements Serializable {
      */
     @Transient
     @ApiModelProperty(value="三级类目名称")
+    @Field(type = FieldType.Keyword)
     private String category3Name;
 
     public String getNickName() {
@@ -97,6 +106,7 @@ public class Goods implements Serializable {
      */
     @Id
     @ApiModelProperty(value="id主键")
+    @Field(type = FieldType.Long)
     private Long id;
 
     /**
@@ -104,6 +114,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "seller_id")
     @ApiModelProperty(value="sellerId商家ID")
+    @Field(type = FieldType.Keyword)
     private String sellerId;
 
     /**
@@ -111,6 +122,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "goods_name")
     @ApiModelProperty(value="goodsNameSPU名")
+    @Field(type = FieldType.Text, analyzer = "ik_max_word",searchAnalyzer = "ik_smart")
     private String goodsName;
 
     /**
@@ -118,6 +130,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "default_item_id")
     @ApiModelProperty(value="defaultItemId默认SKU")
+    @Field(type = FieldType.Long)
     private Long defaultItemId;
 
     /**
@@ -125,6 +138,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "audit_status")
     @ApiModelProperty(value="auditStatus状态")
+    @Field(type = FieldType.Keyword)
     private String auditStatus;
 
     /**
@@ -132,6 +146,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "is_marketable")
     @ApiModelProperty(value="isMarketable是否上架")
+    @Field(type = FieldType.Keyword)
     private String isMarketable;
 
     /**
@@ -139,12 +154,14 @@ public class Goods implements Serializable {
      */
     @Column(name = "brand_id")
     @ApiModelProperty(value="brandId品牌")
+    @Field(type = FieldType.Long)
     private Long brandId;
 
     /**
      * 副标题
      */
     @ApiModelProperty(value="caption副标题")
+    @Field(type = FieldType.Text, analyzer = "ik_max_word",searchAnalyzer = "ik_smart")
     private String caption;
 
     /**
@@ -152,6 +169,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "category1_id")
     @ApiModelProperty(value="category1Id一级类目")
+    @Field(type = FieldType.Long)
     private Long category1Id;
 
     /**
@@ -159,6 +177,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "category2_id")
     @ApiModelProperty(value="category2Id二级类目")
+    @Field(type = FieldType.Long)
     private Long category2Id;
 
     /**
@@ -166,6 +185,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "category3_id")
     @ApiModelProperty(value="category3Id三级类目")
+    @Field(type = FieldType.Long)
     private Long category3Id;
 
     /**
@@ -173,12 +193,14 @@ public class Goods implements Serializable {
      */
     @Column(name = "small_pic")
     @ApiModelProperty(value="smallPic小图")
+    @Field(type = FieldType.Keyword)
     private String smallPic;
 
     /**
      * 商城价
      */
     @ApiModelProperty(value="price商城价")
+    @Field(type = FieldType.Scaled_Float)
     private BigDecimal price;
 
     /**
@@ -186,6 +208,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "type_template_id")
     @ApiModelProperty(value="typeTemplateId分类模板ID")
+    @Field(type = FieldType.Long)
     private Long typeTemplateId;
 
     /**
@@ -193,6 +216,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "is_enable_spec")
     @ApiModelProperty(value="isEnableSpec是否启用规格")
+    @Field(type = FieldType.Keyword)
     private String isEnableSpec;
 
     /**
@@ -200,6 +224,7 @@ public class Goods implements Serializable {
      */
     @Column(name = "is_delete")
     @ApiModelProperty(value="isDelete是否删除")
+    @Field(type = FieldType.Keyword)
     private String isDelete;
 
     private static final long serialVersionUID = 1L;

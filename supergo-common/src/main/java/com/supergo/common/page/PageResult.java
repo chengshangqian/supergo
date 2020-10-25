@@ -4,29 +4,29 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by on 2019/3/14.
+ * 分页结果
  */
 public class PageResult implements Serializable {
 
     private Long total;
 
-    private int page=1;
+    private Integer page = 1;
 
-    private List<?> rows;
+    private Integer size = 10;
 
-    private int pageSize=10;
+    private List<?> list;
 
     public PageResult() {
     }
 
-    public PageResult(Long total, List<?> rows) {
+    public PageResult(Long total, List<?> list) {
         this.total = total;
-        this.rows = rows;
+        this.list = list;
     }
 
-    public PageResult(Long total, List<?> rows,int page) {
+    public PageResult(Long total, List<?> list, Integer page) {
         this.total = total;
-        this.rows = rows;
+        this.list = list;
         this.page = page;
     }
 
@@ -38,28 +38,28 @@ public class PageResult implements Serializable {
         this.total = total;
     }
 
-    public int getPage() {
+    public Integer getPage() {
         return page;
     }
 
-    public void setPage(int page) {
+    public void setPage(Integer page) {
         this.page = page;
     }
 
-    public List<?> getRows() {
-        return rows;
+    public Integer getSize() {
+        return size;
     }
 
-    public void setRows(List<?> rows) {
-        this.rows = rows;
+    public void setSize(Integer size) {
+        this.size = size;
     }
 
-    public int getPageSize() {
-        return pageSize;
+    public List<?> getList() {
+        return list;
     }
 
-    public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
+    public void setList(List<?> list) {
+        this.list = list;
     }
 
     @Override
@@ -67,8 +67,8 @@ public class PageResult implements Serializable {
         return "PageResult{" +
                 "total=" + total +
                 ", page=" + page +
-                ", rows=" + rows +
-                ", pageSize=" + pageSize +
+                ", list=" + list +
+                ", size=" + size +
                 '}';
     }
 }

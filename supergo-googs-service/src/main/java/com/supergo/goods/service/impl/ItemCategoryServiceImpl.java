@@ -34,12 +34,12 @@ public class ItemCategoryServiceImpl extends BaseServiceImpl<Itemcat> implements
         // 先从redis缓存中获取
         String itemCategories = stringRedisTemplate.opsForValue().get(RedisConstants.ITEM_CATEGORIES_ALL);
 
-        if(LOGGER.isDebugEnabled()){
-            LOGGER.debug("redis中缓存的所有商品分类: {}",itemCategories);
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("redis中缓存的所有商品分类: {}", itemCategories);
         }
 
-        if(!StringUtils.isEmpty(itemCategories)){
-            return JsonUtils.jsonToList(itemCategories,Itemcat.class);
+        if (!StringUtils.isEmpty(itemCategories)) {
+            return JsonUtils.jsonToList(itemCategories, Itemcat.class);
         }
 
         // 商品分类根节点id
@@ -47,20 +47,20 @@ public class ItemCategoryServiceImpl extends BaseServiceImpl<Itemcat> implements
 
         // 从数据库中查询
         List<Itemcat> allItemCategories = getAllChildItemCategories(rootId);
-        if(null != allItemCategories){
+        if (null != allItemCategories) {
 
             // 格式化为JSON数据字符串，放入redis缓存中
             itemCategories = JsonUtils.objectToJson(allItemCategories);
 
-            if(LOGGER.isDebugEnabled()){
-                LOGGER.debug("数据库中最新的所有商品分类: {}",itemCategories);
+            if (LOGGER.isDebugEnabled()) {
+                LOGGER.debug("数据库中最新的所有商品分类: {}", itemCategories);
             }
 
             // TODO 缓存的更新，根据项目实际情况选择或实现以下策略
             //  1.结合商品分类的更新频率，设置有效期
             //  2.在商品分类更新时实时更新一次redis中的缓存
             //  3.调用cacheAllItemCategories手动更新缓存
-            stringRedisTemplate.opsForValue().set(RedisConstants.ITEM_CATEGORIES_ALL,itemCategories);
+            stringRedisTemplate.opsForValue().set(RedisConstants.ITEM_CATEGORIES_ALL, itemCategories);
         }
 
         return allItemCategories;
@@ -103,12 +103,12 @@ public class ItemCategoryServiceImpl extends BaseServiceImpl<Itemcat> implements
     public List<Itemcat> cacheAllItemCategories() {
 
         // 先清除再缓存，保证数据是最新
-        if(stringRedisTemplate.delete(RedisConstants.ITEM_CATEGORIES_ALL)){
+        if (stringRedisTemplate.delete(RedisConstants.ITEM_CATEGORIES_ALL)) {
             // 重新获取并缓存：缓存操作在allItemCategories方法中实现
             return this.allItemCategories();
         }
 
-        if(LOGGER.isWarnEnabled()){
+        if (LOGGER.isWarnEnabled()) {
             LOGGER.warn("尝试更新所有商品列表的缓存失败...");
         }
 

@@ -12,36 +12,36 @@ public class ItemCategoryController {
 
     @Autowired
     private ItemCategoryService itemCategoryService;
-    
+
     @PostMapping
-    public HttpResult post(@RequestBody Itemcat itemcat){
+    public HttpResult post(@RequestBody Itemcat itemcat) {
         itemCategoryService.add(itemcat);
         return HttpResult.ok();
     }
 
     @DeleteMapping("/{id}")
-    public HttpResult delete(@PathVariable("id") Long id){
+    public HttpResult delete(@PathVariable("id") Long id) {
         itemCategoryService.deleteByIds(new Long[]{id});
         return HttpResult.ok();
     }
 
     @PutMapping("/{id}")
-    public HttpResult put(@PathVariable("id") Long id,@RequestBody Itemcat itemCategory){
+    public HttpResult put(@PathVariable("id") Long id, @RequestBody Itemcat itemCategory) {
         itemCategory.setId(id);
         itemCategoryService.add(itemCategory);
         return HttpResult.ok();
     }
 
     @GetMapping("/{id}")
-    public HttpResult get(@PathVariable("id") Long id){
+    public HttpResult get(@PathVariable("id") Long id) {
         return HttpResult.ok(itemCategoryService.findOne(id));
     }
 
-    @PostMapping("/query/{page}/{rows}")
+    @PostMapping("/query/{page}/{size}")
     public HttpResult query(@PathVariable(value = "page") Integer page,
-                            @PathVariable(value = "rows") Integer rows,
-                            @RequestBody Itemcat itemCategory){
-        return HttpResult.ok(itemCategoryService.findPage(page,rows,itemCategory));
+                            @PathVariable(value = "size") Integer size,
+                            @RequestBody Itemcat itemCategory) {
+        return HttpResult.ok(itemCategoryService.findPage(page, size, itemCategory));
     }
 
     /**
@@ -70,7 +70,7 @@ public class ItemCategoryController {
      *
      * @return 返回最新的商品分类列表
      */
-    @GetMapping(value = {"/cache","/re-cache"})
+    @GetMapping(value = {"/cache", "/re-cache"})
     public HttpResult cacheAllItemCategories() {
         return HttpResult.ok(itemCategoryService.cacheAllItemCategories());
     }
