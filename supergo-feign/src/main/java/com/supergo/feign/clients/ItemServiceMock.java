@@ -6,28 +6,29 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ItemServiceMock implements ItemServiceClient {
+
     @Override
-    public HttpResult post(Item item) {
+    public HttpResult post(String authorization, Item item) {
         return null;
     }
 
     @Override
-    public HttpResult delete(Long id) {
+    public HttpResult delete(String authorization, Long id) {
         return null;
     }
 
     @Override
-    public HttpResult put(Long id, Item item) {
+    public HttpResult put(String authorization, Long id, Item item) {
         return null;
     }
 
     @Override
-    public HttpResult get(Long id) {
+    public HttpResult get(String authorization, Long id) {
         return null;
     }
 
     @Override
-    public HttpResult query(Integer page, Integer size, Item item) {
+    public HttpResult query(String authorization, Integer page, Integer size, Item item) {
         return null;
     }
 }

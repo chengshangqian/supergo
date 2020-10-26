@@ -1,6 +1,9 @@
 server:
   address: 127.0.0.1
   port: 8020
+  servlet:
+    session:
+      timeout: 3600 # 支持JDB8中Duration类格式的事件，否则为秒
 
 spring:
   application:
@@ -12,6 +15,27 @@ spring:
   # 允许覆盖bean
   main:
     allow-bean-definition-overriding: true # 配置了多个feign接口调用的都是同一个服务，需要设置为true
+
+  # 数据仓库设置
+  data:
+    redis:
+      repositories:
+        enabled: false # 关闭redis的repositories，否则会有 Multiple Spring Data modules found
+  # 生成分布式id,缓存商品分类列表
+  redis:
+    host: 192.168.8.180
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        max-wait: 100  #100000
+        max-idle: 5   #10
+        max-active: 20  #100
+    timeout: 5000
+
+  # 配置Session
+  session:
+    store-type: redis
 
 eureka:
   client:
@@ -47,6 +71,15 @@ management:
     web:
       exposure:
         include: "*"
+
+# 自定义属性
+app:
+  security:
+    oauth2:
+      client-id: ${spring.application.name}
+      client-secret: 123456
+      authorization-type: Basic
+      grant-type: password
 
 logging:
   file: logs/supergo/${spring.application.name}.log

@@ -1,5 +1,6 @@
 package com.supergo.portal.controller;
 
+import com.supergo.common.authorization.AuthorizationUtil;
 import com.supergo.common.http.HttpResult;
 import com.supergo.feign.clients.ItemCategoryServiceClient;
 import io.swagger.annotations.*;
@@ -23,7 +24,7 @@ public class ItemCategoryController {
             @ApiResponse(code = 200, message = "返回JSON格式的商品分类列表信息")
     )
     @GetMapping
-    public HttpResult allItemCategories() {
-        return itemCategoryServiceClient.allItemCategories();
+    public HttpResult allItemCategories(@RequestHeader("Authorization") String authorization) {
+        return itemCategoryServiceClient.allItemCategories(authorization);
     }
 }

@@ -23,6 +23,7 @@
         <module>supergo-feign</module>
         <module>supergo-manager-web</module>
         <module>supergo-portal-web</module>
+        <module>supergo-authorization</module>
     </modules>
 
     <!-- spring-boot -->
@@ -48,6 +49,7 @@
         <lambok>1.16.20</lambok>
         <fastjson>1.2.9</fastjson>
         <springfox.vision>3.0.0</springfox.vision>
+        <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
 
         <wxpay.version>0.0.3</wxpay.version>
         <httpclient.version>4.5.3</httpclient.version>
@@ -167,6 +169,12 @@
             </dependency>
 
             <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${comment-lang}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.csource.fastdfs</groupId>
                 <artifactId>fastdfs</artifactId>
                 <version>${fastDFS.client.version}</version>
@@ -244,11 +252,6 @@
                 <version>${joda-time}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${comment-lang}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 

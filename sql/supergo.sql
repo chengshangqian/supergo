@@ -7007,3 +7007,14 @@ CREATE TABLE `tb_user_bak` (
 INSERT INTO `tb_user_bak` VALUES ('1', 'admin', 'admin');
 INSERT INTO `tb_user_bak` VALUES ('3', 'coffee', '123456');
 INSERT INTO `tb_user_bak` VALUES ('2', '{bcrypt}$2a$10$4dNaXe2SUzQpzJeB9Izmk.jwTwNb/6LGNF7zXbmMnqRUiXYfsYUk2', 'user_3');
+
+-- ----------------------------
+--Table structure for tb_user_role
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_user_role`;
+CREATE TABLE `tb_user_role` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) NOT NULL,
+  `role_id` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

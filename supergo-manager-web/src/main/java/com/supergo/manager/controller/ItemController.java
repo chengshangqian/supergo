@@ -31,8 +31,8 @@ public class ItemController {
             @ApiResponse(code=200,message = "返回操作状态信息")
     )
     @PostMapping
-    public HttpResult post(@RequestBody Item item){
-        return itemServiceClient.post(item);
+    public HttpResult post(@RequestBody Item item,@RequestHeader("Authorization") String authorization){
+        return itemServiceClient.post(authorization,item);
     }
 
     @ApiOperation(value="删除商品",notes = "根据商品id删除商品")
@@ -43,8 +43,8 @@ public class ItemController {
             @ApiResponse(code=200,message = "返回操作状态信息")
     )
     @DeleteMapping("/{id}")
-    public HttpResult delete(@PathVariable("id") Long id){
-        return itemServiceClient.delete(id);
+    public HttpResult delete(@PathVariable("id") Long id,@RequestHeader("Authorization") String authorization){
+        return itemServiceClient.delete(authorization,id);
     }
 
     @ApiOperation(value="更新商品",notes = "根据商品id更新商品信息")
@@ -56,8 +56,8 @@ public class ItemController {
             @ApiResponse(code=200,message = "返回操作状态信息")
     )
     @PutMapping("/{id}")
-    public HttpResult put(@PathVariable("id") Long id, @RequestBody Item item){
-        return itemServiceClient.put(id,item);
+    public HttpResult put(@PathVariable("id") Long id, @RequestBody Item item,@RequestHeader("Authorization") String authorization){
+        return itemServiceClient.put(authorization,id,item);
     }
 
     // 允许跨域请求
@@ -74,14 +74,15 @@ public class ItemController {
             @ApiResponse(code=200,message = "返回JSON格式的商品对象信息")
     )
     @GetMapping("/{id}")
-    public HttpResult get(@PathVariable("id") Long id) {
-        return itemServiceClient.get(id);
+    public HttpResult get(@PathVariable("id") Long id, @RequestHeader("Authorization") String authorization) {
+        return itemServiceClient.get(authorization,id);
     }
 
     @PostMapping("/query/{page}/{size}")
     public HttpResult query(@PathVariable(value = "page") Integer page,
-                     @PathVariable(value = "size") Integer size,
-                     @RequestBody Item item){
-        return itemServiceClient.query(page,size,item);
+                            @PathVariable(value = "size") Integer size,
+                            @RequestBody Item item,
+                            @RequestHeader("Authorization") String authorization){
+        return itemServiceClient.query(authorization,page,size,item);
     }
 }
